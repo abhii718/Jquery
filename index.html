@@ -4,28 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jquery</title>
+    <style>
+      p {
+        border: 3px solid red;
+        text-align: center;
+        display: inline-flexbox;
+        background-color: black;
+        color: #fff;
+        padding: 15px;
+        margin: 40px;
+      }
+      p:hover {
+        border: 5px solid blue;
+        zoom: 105%;
+        font-weight: 900;
+        padding: 10px;
+        /* transform: rotate(1deg); */
+      }
+      #wiki {
+        background-color: blue;
+        color: whitesmoke;
+      }
+    </style>
   </head>
   <body>
-    <p>This is my body1</p>
-    <p>This is my body2</p>
-    <p>This is my body3</p>
+    <p>This is my p</p>
+    <p id="id">This is my id</p>
+    <p class="class">This is my class</p>
     <p>This is my body4</p>
-  </body>
-  <script src="JS/jquery-3.7.1.min.js"></script>
-  <script>
-    $(document).ready(function () {
-        // Your All Jquery code here 
-    });
 
-    console.log("We are using JQuery");
-    // $('selector').action()
-    // $('p').click()
-    $("p").click(function () {
-      console.log("You clicked on p");
-      // $('p').hide() // To select all p
-      // $(this).hide() // To hide only clicked p
-      // $('#id').hide()
-      // $('.class').hide()
-    });
-  </script>
+    <button id="but">Click me!</button>
+
+    <div id="wiki">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
+      repellendus quasi perspiciatis alias dolore tempora aliquam impedit
+      voluptate, debitis delectus aspernatur ipsum distinctio facilis sint
+      laboriosam, amet ea et sapiente iste tempori ipsa nostrum! Cumque illo hic
+      odio dolor deserunt. Vero aperiam nam saepe libero aliquid expedita
+      repellendus, nihil cumque, dicta, harum a! Fugit &nbsp; &nbsp culpa magnam
+      consectetu
+    </div>
+    <div>
+      <form>
+        <input id="inp" type="text" />
+
+        <textarea name="" id="ta">This is vallue my text area</textarea>
+      </form>
+    </div>
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/myjquery.js"></script>
+  </body>
 </html>
